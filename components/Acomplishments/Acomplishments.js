@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import CountUp from "react-countup";
+import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
 import { Section, SectionTitle } from "../../styles/GlobalComponents";
@@ -26,9 +26,9 @@ const Acomplishments = () => {
           {data.map((card, index) => (
             <Box key={index}>
               <BoxNum>
-                {/* {counterOn && (
+                {counterOn && (
                   <CountUp start={0} end={card.number} duration={5} delay={0} />
-                )} */}
+                )}
                 +
               </BoxNum>
               <BoxText>{card.text}</BoxText>
